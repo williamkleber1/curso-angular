@@ -1,0 +1,7 @@
+<input type="text" [(ngModel)]="cliente.nome" id="cliente">
+<input type="text" [(ngModel)]="cliente.idade" id="cliente">
+  <button type="button" (click)="addCliente()">  cadastrar</button>
+  
+  <ul>
+    <li *ngFor="let cli of clientes">{{cli.nome}} --- {{cli.idade}}</li>
+  </ul>
